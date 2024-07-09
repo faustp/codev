@@ -5,8 +5,7 @@ import json
 
 
 REGION_NAME: Final = "us-east-1"
-ACCOUNT_NUMBER: Final = "925237190983"
-instance = 'i-0cf7dc46d631adcba'
+ACCOUNT_NUMBER: Final = "123456789"
 
 class ResponseMessage:
     def __init__(self, to, message, response_code):
