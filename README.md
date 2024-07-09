@@ -2,6 +2,7 @@
 ## Exam-1 
 Notes: I've used (Virtualbox) Linux Ubuntu server to configure and install NGINX
 run the command below in exam_1 directory 
+
 $:> ansible-playbook webserver-playbook.yaml -i inventory.cfg 
 
 ## Exam-2
