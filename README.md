@@ -12,4 +12,5 @@ Notes:
 
 ## Exam-3
 Notes: 
-1. Please change the variable ACCOUNT_NUMBER in main.py and provide your AWS account number. this will be needed to construct the ARN of SNS Topic
+1. Please install the boto3 python module 
+2. Please change the variable ACCOUNT_NUMBER in main.py and provide your AWS account number. this will be needed to construct the ARN of SNS Topic
