@@ -16,4 +16,7 @@ run the command below in exam_1 directory
 ## Exam-3
 > [!NOTE]
 > 1. Please install the boto3 python module 
-> 2. Please change the variable ACCOUNT_NUMBER in main.py and provide your AWS account number. this will be needed to construct the ARN of SNS Topic
+> 2. Please change the variable ACCOUNT_NUMBER in main.py (line 8) and provide your AWS account number. this will be needed to construct the ARN of SNS Topic
+``` python
+8  ACCOUNT_NUMBER: Final = "123456789"
+```
