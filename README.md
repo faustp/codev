@@ -1,7 +1,7 @@
 # codev
 ## Exam-1 
 > [!NOTE]
-> I've used (Virtualbox) Linux server to configure and install NGINX
+> I've used Amazon Linux 2023 server to configure and install NGINX
 run the command below in exam_1 directory 
 
 ```$> ansible-playbook webserver-playbook.yaml -i inventory.cfg ```
