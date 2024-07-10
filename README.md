@@ -1,9 +1,10 @@
 # codev
 ## Exam-1 
-Notes: I've used (Virtualbox) Linux Ubuntu server to configure and install NGINX
+Notes: I've used (Virtualbox) Linux server to configure and install NGINX
 run the command below in exam_1 directory 
 
 $:> ansible-playbook webserver-playbook.yaml -i inventory.cfg 
+$:> curl test.com
 
 ## Exam-2
 Notes: 
