@@ -5,3 +5,7 @@
 
   roles:
     - webserver
+
+  handlers:
+    - include_tasks: webserver/handlers/main.yml
+  

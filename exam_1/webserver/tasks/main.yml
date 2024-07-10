@@ -13,11 +13,6 @@
     name: nginx
     state: started
     enabled: yes
-  register: result
-
-- name: Show result
-  debug:
-    msg: "{{ result }}"
 
 - name: Remove deafult nginx configuration
   file:
@@ -51,13 +46,17 @@
     src: "vhost.conf"
     dest: /etc/nginx/sites-available/test.conf
 
-- name: Enable default nginx website
+- name: Copy nginx.conf
+  copy:
+    src: "nginx.conf.tmp"
+    dest: /etc/nginx/nginx.conf
+  notify: reload-nginx
+
+- name: Create symlink
   file:
     src: /etc/nginx/sites-available/test.conf
     path: /etc/nginx/sites-enabled/test.conf
     state: link
-  notify: 
-    - restart nginx
 
 - name: Append test.com to local DNS
   lineinfile:
